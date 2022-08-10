@@ -7,40 +7,64 @@
  * @package blockhaus
  */
 
+$post_type = get_post_type();
+$post_type_obj = get_post_type_object( $post_type );
+
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="space-y-6">
+<article id="post-<?php the_ID(); ?>" class="p-6 bg-primary-default border border-neutral-light-500 flex flex-col gap-6 rounded-md shadow-md">
+<?php if('post' === get_post_type()):
+blockhaus_post_thumbnail('landscape'); 
+endif;?>
 	<header class="entry-header">
+
 		<?php the_title(sprintf( '<h2 class="has-large-font-size">', '%s' ), '</h2>');
  		?>
 
 		<div class="entry-meta flex gap-2">
 		
 			<?php
-			blockhaus_posted_on();
 
-			if ( 'page' !== get_post_type() ) :
-			blockhaus_posted_by();
+			if ( 'post' === get_post_type() ) :
+				blockhaus_posted_on();
 			endif; ?>
 
-		<?php if ( 'post' !== get_post_type() ) :
-			echo '<span class="post-type ml-auto bg-gray-100 px-3 py-1 rounded-full uppercase has-small-font-size">' . get_post_type() . '</span>';
-		else:
-			echo '<span class="post-type ml-auto bg-gray-100 px-3 py-1 rounded-full uppercase has-small-font-size">News and Events</span>';
-		endif; ?>
 
 		</div><!-- .entry-meta -->
 		
 	</header><!-- .entry-header -->
 
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
+	
+		<?php $external_site = get_field('source');
 
-		<a class="py-1 px-4 border border-current inline-flex mt-6 shadow-retro hover:bg-white transition-colors duration-200 bg-offset font-bold" aria-label="<?php the_title();?>" href="<?php echo esc_url( get_permalink() );?>" rel="bookmark">View content</a>
-	</div><!-- .entry-summary -->
+if($external_site && ('resources' === get_post_type()) ):?>
+<p class="py-3 inline-flex text-sm italic"><?php echo 'Published in: ' . $external_site;?></p>
 
-	<footer class="entry-footer flex justify-between">
-		<?php blockhaus_entry_footer(); ?>
+<?php endif;
+
+if(('articles' === get_post_type())):
+blockhaus_post_thumbnail('medium'); 
+endif;?>
+
+	
+
+	<footer class="entry-footer mt-auto">
+	<?php
+
+
+	
+	$external_link = get_field('link');
+
+	if($external_link):
+	?>
+
+	<a aria-label="View content at <?php echo $external_site;?>" class="py-1 px-4 border border-current inline-flex transition-colors duration-200 rounded-full hover:ring-4 hover:ring-offset focus:ring-4 focus:ring-offset" href="<?php echo esc_url( $external_link );?>" rel="external">View <?php echo $post_type_obj->labels->singular_name;?></a>
+
+	<?php else:?>
+
+	<a class="py-1 px-4 border border-current inline-flex transition-colors duration-200 rounded-full hover:ring-4 hover:ring-offset focus:ring-4 focus:ring-offset" href="<?php echo esc_url( get_permalink() );?>" rel="bookmark">View <?php echo $post_type_obj->labels->singular_name;?></a>
+
+	<?php endif;?>
+
 	</footer><!-- .entry-footer -->
-	<hr>
 </article><!-- #post-<?php the_ID(); ?> -->

@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import '/custom/base.css';
+@import '/custom/layouts.css';
 @import 'tailwindcss/components';
 @import '/custom/components.css';
 @import '/custom/wpforms.css';

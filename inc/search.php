@@ -36,21 +36,29 @@ function include_cpt_search( $query ) {
 	$query->set( 'post_type', $types_to_search );
 	}
 
+		if ( $query->is_main_query() && ! is_admin() && ( is_category() || is_tag() && empty( $query->query_vars['suppress_filters'] ) ) ) {
+			$query->set( 'post_type', $types_to_search );
+	}
+	
+
 	return $query;
 
 }
-add_filter( 'pre_get_posts', 'include_cpt_search' );
+// add_filter( 'pre_get_posts', 'include_cpt_search' );
+
 
 /* Custom Form allows more control over output that using search block */
 
 function blockhaus_custom_form($placeholder) {
-	$form = '<form role="search" method="get" class="search-form text-sm leading-6 flex py-1 px-2 bg-white rounded-full border border-gray-100 focus-within:border-green-400 gap-2" action="' . home_url( '/' ) . '">
+	$post_type = get_post_type();
+	$form = '<form role="search" method="get" class="search-form w-fit text-sm leading-6 flex py-1 px-2 bg-primary-default rounded-full border border-neutral-light-100 focus-within:border-secondary gap-2" action="' . home_url( '/' ) . '">
 	<label>
 		<span class="screen-reader-text">Search for:</span>
-		<input type="search" class="search-field w-32 border-none ring-transparent focus:ring-transparent focus:shadow-none focus:border-none py-0 px-2 text-sm focus-visible:outline-none" placeholder="' . $placeholder . '" value="' . get_search_query() . '" name="s">
+		<input type="search" class="search-field w-64 border-none ring-transparent focus:ring-transparent focus:shadow-none focus:border-none py-0 px-2 text-sm focus-visible:outline-none" placeholder="' . $placeholder . '" value="' . get_search_query() . '" name="s">
 	</label>
-	<button type="submit" class="search-submit px-2 bg-green-400 rounded-full hover:bg-green-300 transition-colors duration-200 cursor-pointer" aria-label="Submit search" value="Search">
-    <svg aria-hidden="true" focusable="false" id="search-icon" class="search-icon" viewBox="0 0 24 24" width="24" height="24">
+	<input type="hidden" name="post_type" value="' . $post_type . '" />
+	<button type="submit" class="search-submit px-2 bg-accent-default text-primary-default rounded-full hover:bg-neutral-dark-500 transition-colors duration-200 cursor-pointer" aria-label="Submit search" value="Search">
+    <svg class="fill-primary-default" aria-hidden="true" focusable="false" id="search-icon" class="search-icon" viewBox="0 0 24 24" width="24" height="24">
 					<path d="M13.5 6C10.5 6 8 8.5 8 11.5c0 1.1.3 2.1.9 3l-3.4 3 1 1.1 3.4-2.9c1 .9 2.2 1.4 3.6 1.4 3 0 5.5-2.5 5.5-5.5C19 8.5 16.5 6 13.5 6zm0 9.5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"></path>
 		</svg>
 </button>

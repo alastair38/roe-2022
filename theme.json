@@ -10,9 +10,9 @@
           "name": "Primary"
         },
         {
-          "slug": "primary-offset",
-          "color": "rgba(253 224 71 / 1)",
-          "name": "Primary Offset"
+          "slug": "offset",
+          "color": "rgba(67 168 223 / 1)",
+          "name": "Offset"
         },
         {
           "slug": "secondary",
@@ -21,13 +21,28 @@
         },
         {
           "slug": "accent",
-          "color": "rgba(74 222 128 / 1)",
+          "color": "rgba(35 45 50 / 1)",
           "name": "Accent"
         },
         {
+          "slug": "accent-secondary",
+          "color": "rgba(255 254 171 / 1)",
+          "name": "Secondary Accent"
+        },
+        {
+          "slug": "accent-tertiary",
+          "color": "rgba(165 209 102 / 1)",
+          "name": "Tertiary Accent"
+        },
+        {
           "slug": "highlight",
-          "color": "rgba(37 99 235 / 1)",
+          "color": "rgba(34 188 226 / 1)",
           "name": "Highlight"
+        },
+        {
+          "slug": "light-opacity",
+          "color": "rgba(255 255 255 / .75)",
+          "name": "Light with Opacity"
         },
         {
           "slug": "neutral-light-900",
@@ -188,12 +203,12 @@
     "elements": {
       "h1": {
         "color": {
-          "text": "var(--wp--preset--color--secondary)"
+          "text": "var(--wp--preset--color--accent)"
         }
       },
       "h2": {
         "color": {
-          "text": "var(--wp--preset--color--secondary)"
+          "text": "var(--wp--preset--color--accent)"
         }
       }
     },
@@ -206,15 +221,14 @@
         "spacing": {
           "padding": {
             "top": "0.25rem",
-            "right": "0.5rem",
+            "right": "0.75rem",
             "bottom": "0.25rem",
-            "left": "0.5rem"
+            "left": "0.75rem"
           }
         },
         "border": {
           "radius": "inherit",
-          "width": "1px",
-          "color": "currentColor"
+          "width": "1px"
         },
         "typography": {
           "fontSize": "var(--wp--preset--font-size--normal)"

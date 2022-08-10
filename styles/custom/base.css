@@ -3,7 +3,7 @@ body {
   @apply h-full;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -11,25 +11,33 @@ h5,
 h6,
 #site-navigation {
   @apply font-serif;
-}
+} */
 
 h1[contenteditable='true'] {
-  @apply text-5xl;
+  @apply text-huge leading-tight;
+}
+
+article p a {
+  @apply underline decoration-highlight decoration-2 hover:decoration-secondary focus:decoration-secondary;
+}
+
+#primary-menu a {
+  @apply px-2 rounded-full;
 }
 
 [aria-current='page'] {
-  @apply underline decoration-green-400 decoration-4;
+  @apply bg-neutral-light-100 border;
 }
 
 main {
-  @apply flex-auto grid;
+  @apply flex-auto;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  @apply bg-green-400;
+  @apply bg-highlight;
 }
 
 ::selection {
-  @apply bg-green-400;
+  @apply bg-highlight;
 }
