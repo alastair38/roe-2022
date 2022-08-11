@@ -25,19 +25,19 @@
   z-index: 1;
 }
 
-.archive header.entry-header img {
+.post-type-archive-resources header.entry-header img {
   filter: drop-shadow(1px 1px 2px var(--wp--preset--color--secondary));
 }
 
-.post-type-archive-books:not(.search) article {
+.post-type-archive-books article {
   @apply col-span-full md:flex-row gap-6;
 }
 
-.post-type-archive-books:not(.search) article img {
+.post-type-archive-books article img {
   @apply w-full md:w-1/2;
 }
 
-.post-type-archive-books:not(.search) article .content-wrapper {
+.post-type-archive-books article .content-wrapper {
   @apply justify-between;
 }
 

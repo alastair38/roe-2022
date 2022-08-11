@@ -742,32 +742,32 @@ main {
   z-index: 1;
 }
 
-.archive header.entry-header img {
+.post-type-archive-resources header.entry-header img {
   filter: drop-shadow(1px 1px 2px var(--wp--preset--color--secondary));
 }
 
-.post-type-archive-books:not(.search) article {
+.post-type-archive-books article {
   grid-column: 1 / -1;
   gap: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .post-type-archive-books:not(.search) article {
+  .post-type-archive-books article {
     flex-direction: row;
   }
 }
 
-.post-type-archive-books:not(.search) article img {
+.post-type-archive-books article img {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .post-type-archive-books:not(.search) article img {
+  .post-type-archive-books article img {
     width: 50%;
   }
 }
 
-.post-type-archive-books:not(.search) article .content-wrapper {
+.post-type-archive-books article .content-wrapper {
   justify-content: space-between;
 }
 

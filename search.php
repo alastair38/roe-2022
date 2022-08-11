@@ -8,27 +8,28 @@
  */
 
 get_header();
+$post_type_obj = get_post_type_object( $post_type );
+$header_image = get_field('search_header', 'options');
 ?>
 
 <main class="space-y-6 p-6 w-11/12 md:w-3/4 bg-primary-default rounded-md shadow-md mx-auto mt-16 mb-4 md:mt-12 md:mb-12">
 
-		<?php if ( have_posts() ) : 
-	
-		$header_image = get_field('search_header', 'options');
-				
-		?>
-
-
-
-<!-- <header class="col-span-full"> -->
-
+		<?php if ( have_posts() ) : ?>
 
 <header class="entry-header p-6 bg-offset bg-graindots flex items-center relative overflow-hidden justify-between">
 
 	<h1 class="text-lg md:text-gigantic px-6 font-black">
 	<?php
-	/* translators: %s: search query. */
-	printf( esc_html__( 'Search Results for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
+	if($wp_query->found_posts === 1):
+
+		/* translators: %s: search query. */
+	printf( esc_html__( $wp_query->found_posts . ' Search Result for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
+
+	else:
+		/* translators: %s: search query. */
+	printf( esc_html__( $wp_query->found_posts . ' Search Results for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
+	endif;
+	
 	?>
 </h1>
 
@@ -36,10 +37,10 @@ get_header();
 				if($header_image):
 				?>
 				<img class="hidden md:inline-block h-40 rounded-md" src="<?php echo $header_image['url'];?>" alt="<?php echo $header_image['alt'];?>">
-
 				<?php endif; ?>
 	</header><!-- .page-header -->
-
+	<?php echo blockhaus_custom_form("Search " . $post_type_obj->labels->name . " ...");
+	?>
 	<div class="grid w-full grid-cols-1 md:grid-cols-3 gap-6">
 
 			<?php
