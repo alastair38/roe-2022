@@ -28,7 +28,7 @@
 	<header id="masthead" class="bg-primary-default fixed top-0 left-0 right-0 z-50 px-2 lg:relative flex justify-between items-center border-b-4 border-offset">
 		<div class="flex items-center gap-2">
 
-   <img class="h-12" src="/wp-content/themes/blockhaus/assets/images/logo/logo.png" alt="Graphic showing a tree-lined city skyline">
+   <img class="h-12" src="/wp-content/themes/roe-2022/assets/images/logo/logo.png" alt="Graphic showing a tree-lined city skyline">
 				<span class="text-base md:text-xl font-black uppercase"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			
 		</div><!-- .site-branding -->
