@@ -20,7 +20,7 @@ $post_type_obj = get_post_type_object( $post_type );
 			<!-- <header class="col-span-full"> -->
 
 	
-	<header class="entry-header p-6 bg-offset bg-graindots flex items-center relative overflow-hidden justify-between">
+	<header class="entry-header p-6 bg-offset flex items-center relative overflow-hidden justify-between">
 
 		<?php 
 		

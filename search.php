@@ -23,11 +23,11 @@ $header_image = get_field('search_header', 'options');
 	if($wp_query->found_posts === 1):
 
 		/* translators: %s: search query. */
-	printf( esc_html__( $wp_query->found_posts . ' Search Result for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
+	printf( esc_html__( $wp_query->found_posts . ' search result for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
 
 	else:
 		/* translators: %s: search query. */
-	printf( esc_html__( $wp_query->found_posts . ' Search Results for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
+	printf( esc_html__( $wp_query->found_posts . ' search results for: %s', 'blockhaus' ), '<span class="underline decoration-accent-secondary decoration-4">' . get_search_query() . '</span>' );
 	endif;
 	
 	?>

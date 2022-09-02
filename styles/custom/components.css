@@ -189,11 +189,11 @@ iframe {
 }
 
 ul.services-list li {
-  @apply py-6 pl-12 relative;
+  @apply py-6 pl-10 relative;
 }
 
 ul.services-list li:before {
-  @apply absolute content-[''] h-8 w-8 -left-2 -rotate-45 border-t-0 border-l-0 border-r-8 border-b-8 border-neutral-light-100;
+  @apply absolute content-[''] h-6 w-6 -left-2 -rotate-45 border-t-0 border-l-0 border-r-8 border-b-8 border-neutral-light-100;
   top: calc(50% - 1rem);
 }
 
