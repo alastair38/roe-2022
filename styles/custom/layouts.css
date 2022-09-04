@@ -19,6 +19,10 @@
   outline: 5rem solid rgba(33, 89, 158, 0.3);
 } */
 
+.blog article img {
+  @apply aspect-video;
+}
+
 [class*='-template-default'] header.entry-header,
 .blog header.entry-header,
 .archive header.entry-header {

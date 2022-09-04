@@ -19,17 +19,6 @@ get_header();
 			// get_template_part( 'template-parts/content', 'page' );
 			get_template_part( 'template-parts/content', 'single');
 
-			the_post_navigation(
-				array(
-					'prev_text' => '<span aria-hidden="true" class="nav-subtitle font-bold bg-offset p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
-				</svg></span> <span class="nav-title sr-only">%title</span>',
-					'next_text' => '<span class="nav-title sr-only">%title</span><span aria-hidden="true" class="nav-subtitle font-bold bg-offset p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-					<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
-				</svg></span>',
-				)
-			);
-
 			// If comments are open or we have at least one comment, load up the comment template.
 			// if ( comments_open() || get_comments_number() ) :
 			// 	comments_template();

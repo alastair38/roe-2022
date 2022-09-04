@@ -49,6 +49,8 @@
 				'after'  => '</div>',
 			)
 		);
+
+
 		?>
 
 	
@@ -59,6 +61,20 @@
 	// if sharing is enabled on the content item, show the social media share buttons
 	get_template_part( 'template-parts/content', 'share-buttons' );
 
-	endif;?>
+	endif;
+	
+	the_post_navigation(
+		array(
+			'prev_text' => '<span aria-hidden="true" class="nav-subtitle font-bold bg-offset p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+		</svg></span> <span class="nav-title sr-only">%title</span>',
+			'next_text' => '<span class="nav-title sr-only">%title</span><span aria-hidden="true" class="nav-subtitle font-bold bg-offset p-1 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+			<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+		</svg></span>',
+		)
+	);
+	
+	
+	?>
 </div><!-- .entry-content -->
 </article><!-- #post-<?php the_ID(); ?> -->

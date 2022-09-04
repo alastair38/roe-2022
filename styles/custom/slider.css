@@ -1,0 +1,151 @@
+.slick-slide.slick-current.slick-active {
+  left: 0 !important;
+}
+
+.slick-autoplay-toggle-button {
+  bottom: 0rem;
+  position: absolute;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slick-list {
+  padding: 1rem 3rem;
+}
+
+.custom-prev-button.slick-arrow {
+  position: absolute;
+  left: 0;
+  bottom: calc(50% - 0.75rem);
+}
+
+.custom-next-button.slick-arrow {
+  position: absolute;
+  right: 0;
+  bottom: calc(50% - 0.75rem);
+}
+
+.slick-dots {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+.slick-dots li button .slick-dot-icon:before {
+  position: relative;
+}
+
+span.slick-dot-icon {
+  display: flex;
+  width: 1rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  border: 1px solid #424242;
+}
+
+.slick-active .slick-dot-icon {
+  background: #424242;
+}
+
+.slick-sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.slick-dots li button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.slick-arrow:focus,
+button.slick-arrow:hover {
+  color: #43a8df;
+}
+
+.endorsements-alt:not(.wide) {
+  display: none;
+}
+
+.slick-track {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.slick-slide {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  display: flex;
+  align-items: center;
+}
+
+.endorsements-alt.wide .wp-block-quote {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+
+.endorsements-alt.wide .wp-block-quote cite {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.endorsements-alt.wide .wp-block-group__inner-container {
+  position: relative;
+}
+
+.slick-slide .wp-block-quote cite {
+  display: inline-block;
+  padding-top: 1rem;
+  font-style: italic;
+  font-weight: 900;
+}
+
+.wp-block-quote {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin: 0;
+}
+
+.endorsements-alt .wp-block-group__inner-container h3 {
+  grid-column: 1 / -1;
+}
+
+.endorsements-alt blockquote p,
+.endorsements-alt blockquote cite {
+  color: #232d32;
+  padding-inline: 0;
+}
+
+.wp-block-quote {
+  border: none;
+}
+
+.slick-track {
+  width: 100% !important;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.wp-block-quote cite {
+  font-size: 0.95rem;
+}
+
+.endorsements blockquote:not(:last-of-type) {
+  margin-top: 2rem;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.endorsements-alt blockquote p {
+  font-style: italic;
+}

@@ -7,56 +7,12 @@
   @apply bg-white bg-none p-1 text-gray-900;
 }
 
-.triangles-default:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 10%;
-  aspect-ratio: 1 / 1;
-  bottom: 1rem;
-  left: 1rem;
-  clip-path: polygon(0 0, 100% 100%, 0 100%);
-  background-color: var(--wp--preset--color--accent-secondary);
-  @apply bg-grain-dots rounded-bl-md;
+.awards img {
+  @apply flex h-12;
 }
 
-.triangles-default:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 10%;
-  aspect-ratio: 1 / 1;
-  top: 1rem;
-  right: 1rem;
-  clip-path: polygon(100% 0, 0 0, 100% 100%);
-  background-color: var(--wp--preset--color--accent-secondary);
-  @apply bg-grain-dots rounded-tr-md;
-}
-
-.triangles-alternate:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 10%;
-  aspect-ratio: 1 / 1;
-  top: 1rem;
-  left: 1rem;
-  clip-path: polygon(100% 0, 0 0, 0 100%);
-  background-color: var(--wp--preset--color--accent-tertiary);
-  @apply bg-grain-dots rounded-tl-md;
-}
-
-.triangles-alternate:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 10%;
-  aspect-ratio: 1 / 1;
-  bottom: 1rem;
-  right: 1rem;
-  clip-path: polygon(100% 100%, 100% 0, 0 100%);
-  background-color: var(--wp--preset--color--accent-tertiary);
-  @apply bg-grain-dots rounded-br-md;
+.awards.wp-block-image figcaption {
+  @apply m-0 text-sm;
 }
 
 .blockhaus-cat-links a {
@@ -243,11 +199,13 @@ ul.services-list li:before {
 
 /* POST NAVIGATION STYLES */
 
-.posts-navigation {
+.posts-navigation,
+.post-navigation {
   @apply col-span-full;
 }
 
-.posts-navigation .nav-links {
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
   @apply w-full mx-auto flex justify-between;
 }
 
