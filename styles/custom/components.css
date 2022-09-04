@@ -227,6 +227,10 @@ ul.services-list li:before {
 
 /* MOBILE NAVIGATION */
 
+#masthead {
+  z-index: 1001;
+}
+
 [aria-expanded='true'] + .menu-main-site-container > ul#primary-menu {
   transform: translateY(0%);
   padding-top: 5rem;
