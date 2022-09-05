@@ -45,6 +45,10 @@
   @apply justify-between;
 }
 
+.single .post-thumbnail {
+  @apply hidden lg:block;
+}
+
 /* body.post-type-archive-books,
 body.single-books {
   @apply bg-offset;
