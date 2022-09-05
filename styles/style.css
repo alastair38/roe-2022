@@ -2072,6 +2072,10 @@ input[type='text'], input[type='email'], textarea {
   justify-self: start;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }

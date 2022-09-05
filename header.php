@@ -26,10 +26,10 @@
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'blockhaus' ); ?></a>
 
 	<header id="masthead" class="bg-primary-default fixed top-0 left-0 right-0 px-2 lg:relative flex justify-between items-center border-b-4 border-offset">
-		<div class="flex items-center gap-2 w-full lg:w-auto">
+		<div class="flex justify-center items-center gap-2 w-full lg:w-auto">
 
    <img class="h-12" src="/wp-content/themes/roe-2022/assets/images/logo/logo.png" alt="Graphic showing a tree-lined city skyline">
-				<span class="text-base text-center lg:text-left md:text-xl font-black uppercase"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+				<span class="text-base mx-auto text-center lg:text-left md:text-xl font-black uppercase"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 			
 		</div><!-- .site-branding -->
 
@@ -43,7 +43,7 @@
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-					'menu_class'		 => 'flex flex-col text-2xl lg:text-base lg:h-12 lg:flex-row absolute lg:relative left-0 right-0 top-0 -z-10 lg:z-0 bg-primary-default -translate-y-full lg:translate-y-0 invisible lg:visible gap-4 lg:gap-4 h-screen justify-center items-center ml-auto ease-in-out duration-200'
+					'menu_class'		 => 'overflow-auto flex flex-col text-2xl lg:text-base lg:h-12 lg:flex-row absolute lg:relative left-0 right-0 top-0 -z-10 lg:z-0 bg-primary-default -translate-y-full lg:translate-y-0 invisible lg:visible gap-4 lg:gap-4 h-screen justify-center items-center ml-auto ease-in-out duration-200'
 				)
 			);
 			?>
