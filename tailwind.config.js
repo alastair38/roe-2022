@@ -64,6 +64,7 @@ module.exports = {
         // Complex site-specific column configuration
         hero: '3fr 3rem 2fr',
         header: '12.5% 1fr 12.5%',
+        sidebar: '67% 1fr',
       },
       typography: {
         DEFAULT: {

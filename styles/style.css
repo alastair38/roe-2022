@@ -662,7 +662,7 @@ h1[contenteditable='true'] {
   line-height: 1.25;
 }
 
-article p a {
+article p a, .page-template-default article a, .page-template-page-full section a {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   -webkit-text-decoration-color: var(--wp--preset--color--highlight);
@@ -670,12 +670,12 @@ article p a {
   text-decoration-thickness: 2px;
 }
 
-article p a:hover {
+article p a:hover, .page-template-default article a:hover, .page-template-page-full section a:hover {
   -webkit-text-decoration-color: var(--wp--preset--color--secondary);
           text-decoration-color: var(--wp--preset--color--secondary);
 }
 
-article p a:focus {
+article p a:focus, .page-template-default article a:focus, .page-template-page-full section a:focus {
   -webkit-text-decoration-color: var(--wp--preset--color--secondary);
           text-decoration-color: var(--wp--preset--color--secondary);
 }
@@ -736,7 +736,7 @@ main {
   outline: 5rem solid rgba(33, 89, 158, 0.3);
 } */
 
-.blog article img {
+.blog article img, .blockhaus-blog-latest img {
   aspect-ratio: 16 / 9;
 }
 
@@ -1026,7 +1026,7 @@ blockquote.blockhaus-quote:after {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(4px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
-  --tw-ring-color: var(--wp--preset--color--accent-tertiary);
+  --tw-ring-color: var(--wp--preset--color--offset);
 }
 
 .grain-dots {
@@ -1089,26 +1089,26 @@ iframe {
 
 ul.services-list li {
   position: relative;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
   padding-left: 2.5rem;
 }
 
 ul.services-list li:before {
   position: absolute;
-  left: -0.5rem;
-  height: 1.5rem;
-  width: 1.5rem;
+  left: 0.5rem;
+  height: 1rem;
+  width: 1rem;
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   border-top-width: 0px;
   border-left-width: 0px;
-  border-right-width: 8px;
-  border-bottom-width: 8px;
-  border-color: var(--wp--preset--color--neutral-light-100);
+  border-right-width: 4px;
+  border-bottom-width: 4px;
+  border-color: currentColor;
   --tw-content: '';
   content: var(--tw-content);
-  top: calc(50% - 1rem);
+  top: calc(50% - 0.5rem);
 }
 
 .slanted {
@@ -1986,6 +1986,10 @@ input[type='text'], input[type='email'], textarea {
   grid-template-columns: 12.5% 1fr 12.5%;
 }
 
+.grid-cols-sidebar {
+  grid-template-columns: 67% 1fr;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2171,16 +2175,8 @@ input[type='text'], input[type='email'], textarea {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='visual' viewBox='0 0 900 600' width='900' height='600'%3E%3Cpath d='M584 600L596 550C608 500 632 400 588.5 300C545 200 434 100 378.5 50L323 0L900 0L900 50C900 100 900 200 900 300C900 400 900 500 900 550L900 600Z' fill='%23bfbfbf40'%3E%3C/path%3E%3Cpath d='M251 600L303.5 550C356 500 461 400 455 300C449 200 332 100 273.5 50L215 0L324 0L379.5 50C435 100 546 200 589.5 300C633 400 609 500 597 550L585 600Z' fill='%23ffffff50'%3E%3C/path%3E%3Cpath d='M0 600L0 550C0 500 0 400 0 300C0 200 0 100 0 50L0 0L216 0L274.5 50C333 100 450 200 456 300C462 400 357 500 304.5 550L252 600Z' fill='%23cccbcb3b'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.bg-main {
-  background-image: url('/wp-content/themes/roe-2022/assets/images/backgrounds/main-background.jpg');
-}
-
 .bg-cover {
   background-size: cover;
-}
-
-.bg-fixed {
-  background-attachment: fixed;
 }
 
 .fill-current {
@@ -2189,11 +2185,6 @@ input[type='text'], input[type='email'], textarea {
 
 .fill-primary-default {
   fill: var(--wp--preset--color--primary-default);
-}
-
-.object-contain {
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 
 .object-cover {
@@ -2392,10 +2383,6 @@ input[type='text'], input[type='email'], textarea {
 
 .decoration-4 {
   text-decoration-thickness: 4px;
-}
-
-.bg-blend-luminosity {
-  background-blend-mode: luminosity;
 }
 
 .shadow-retro {
@@ -2972,6 +2959,10 @@ button.slick-arrow:hover {
 
   .lg\:flex-row {
     flex-direction: row;
+  }
+
+  .lg\:gap-2 {
+    gap: 0.5rem;
   }
 
   .lg\:gap-6 {

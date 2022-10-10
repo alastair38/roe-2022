@@ -14,7 +14,7 @@
 function blockhaus_body_classes( $classes ) {
 	// Adds a class of hfeed to non-singular pages.
 
-	$classes[] = 'flex flex-col h-full w-full bg-main bg-neutral-light-100 bg-cover bg-fixed bg-blend-luminosity';
+	$classes[] = 'flex flex-col h-full w-full bg-neutral-light-100';
 
 	return $classes;
 }

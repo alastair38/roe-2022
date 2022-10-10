@@ -17,7 +17,9 @@ h1[contenteditable='true'] {
   @apply text-huge leading-tight;
 }
 
-article p a {
+article p a,
+.page-template-default article a,
+.page-template-page-full section a {
   @apply underline decoration-highlight decoration-2 hover:decoration-secondary focus:decoration-secondary;
 }
 

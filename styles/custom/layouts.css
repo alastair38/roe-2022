@@ -19,7 +19,8 @@
   outline: 5rem solid rgba(33, 89, 158, 0.3);
 } */
 
-.blog article img {
+.blog article img,
+.blockhaus-blog-latest img {
   @apply aspect-video;
 }
 

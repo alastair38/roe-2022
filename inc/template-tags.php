@@ -121,7 +121,7 @@ if ( ! function_exists( 'blockhaus_post_thumbnail' ) ) :
 					the_post_thumbnail(
 						$size,
 						array(
-							'class' => 'object-contain mx-auto',
+							'class' => 'object-cover mx-auto',
 							'alt' => the_title_attribute(
 								array(
 									

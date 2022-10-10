@@ -106,7 +106,7 @@ blockquote.blockhaus-quote:after {
 
 .wp-block-group.services a.wp-block-button__link,
 .wp-block-group.blockhaus-blog-latest a.wp-block-read-more {
-  @apply ring-4 ring-accent-tertiary border-0 mt-auto;
+  @apply ring-4 ring-offset border-0 mt-auto;
 }
 
 .grain-dots {
@@ -145,12 +145,12 @@ iframe {
 }
 
 ul.services-list li {
-  @apply py-6 pl-10 relative;
+  @apply py-3 pl-10 relative;
 }
 
 ul.services-list li:before {
-  @apply absolute content-[''] h-6 w-6 -left-2 -rotate-45 border-t-0 border-l-0 border-r-8 border-b-8 border-neutral-light-100;
-  top: calc(50% - 1rem);
+  @apply absolute content-[''] h-4 w-4 left-2 -rotate-45 border-t-0 border-l-0 border-r-4 border-b-4 border-current;
+  top: calc(50% - 0.5rem);
 }
 
 .slanted {
