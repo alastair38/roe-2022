@@ -662,6 +662,10 @@ h1[contenteditable='true'] {
   line-height: 1.25;
 }
 
+main {
+  max-width: 1400px;
+}
+
 article p a, .page-template-default article a, .page-template-page-full section a {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1986,10 +1990,6 @@ input[type='text'], input[type='email'], textarea {
   grid-template-columns: 12.5% 1fr 12.5%;
 }
 
-.grid-cols-sidebar {
-  grid-template-columns: 67% 1fr;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -2955,6 +2955,10 @@ button.slick-arrow:hover {
   .lg\:translate-y-0 {
     --tw-translate-y: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .lg\:grid-cols-sidebar {
+    grid-template-columns: 67% 1fr;
   }
 
   .lg\:flex-row {

@@ -17,6 +17,10 @@ h1[contenteditable='true'] {
   @apply text-huge leading-tight;
 }
 
+main {
+  max-width: 1400px;
+}
+
 article p a,
 .page-template-default article a,
 .page-template-page-full section a {
