@@ -663,7 +663,8 @@ h1[contenteditable='true'] {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
+  margin-inline: auto;
 }
 
 article p a, .page-template-default article a, .page-template-page-full section a {

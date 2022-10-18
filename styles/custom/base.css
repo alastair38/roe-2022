@@ -18,7 +18,8 @@ h1[contenteditable='true'] {
 }
 
 main {
-  max-width: 1400px;
+  max-width: 1600px;
+  margin-inline: auto;
 }
 
 article p a,
