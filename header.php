@@ -25,7 +25,7 @@
 <div id="page-blockhaus" class="h-full flex flex-col">
 	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'blockhaus' ); ?></a>
 
-	<header id="masthead" class="bg-primary-default fixed top-0 left-0 right-0 px-2 md:flex-col lg:flex-row lg:relative flex justify-between items-center border-b-4 border-offset">
+	<header id="masthead" class="bg-primary-default fixed top-0 left-0 right-0 px-2 lg:flex-row lg:relative flex justify-between items-center border-b-4 border-offset">
 		<div class="flex justify-center items-center gap-0 lg:gap-2 w-full lg:w-auto">
 
    <img class="h-12" src="/wp-content/themes/roe-2022/assets/images/logo/logo.png" alt="Graphic showing a tree-lined city skyline">
