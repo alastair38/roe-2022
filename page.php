@@ -15,7 +15,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="main-content lg:pb-20 mt-16 mb-4 md:mt-12 md:mb-12">
+	<main id="primary" class="main-content mt-32 mb-20 lg:mt-12 lg:mb-12">
 
 		<?php
 		while ( have_posts() ) :

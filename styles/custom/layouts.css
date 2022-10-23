@@ -1,3 +1,15 @@
+.home-wrapper {
+  @apply pr-6;
+}
+
+.entry-header.bg-offset h1 {
+  color: white;
+}
+
+section.has-accent-tertiary-background-color a {
+  @apply decoration-white;
+}
+
 [class*='-template-default'] .post-thumbnail img,
 .blog .post-thumbnail img {
   @apply h-20 md:h-40 rounded-md;
@@ -56,5 +68,5 @@ body.single-books {
 } */
 
 .post-type-archive-articles article img {
-  @apply h-24 my-6;
+  @apply my-6 h-24 object-contain;
 }

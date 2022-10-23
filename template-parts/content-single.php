@@ -12,7 +12,7 @@
 
 	
 
-	<article id="post-<?php the_ID(); ?>" class="space-y-6 p-6 w-11/12 md:w-3/4 bg-primary-default rounded-md shadow-md mx-auto overflow-hidden">
+	<article id="post-<?php the_ID(); ?>" class="space-y-6 p-6 w-11/12 lg:w-3/4 bg-primary-default rounded-md shadow-md mx-auto overflow-hidden">
 	
 	<header class="entry-header bg-offset p-6 bg-graindots flex items-center relative overflow-hidden justify-between">
 

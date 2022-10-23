@@ -81,11 +81,15 @@ blockquote.blockhaus-quote:after {
 }
 
 .blockhaus-featured-pages img {
-  @apply h-full w-full object-cover;
+  @apply w-full object-contain mx-auto h-24;
 }
 
-.blockhaus-featured-pages a {
-  @apply bg-offset hover:bg-primary-default;
+.blockhaus-featured-pages figure {
+  @apply flex flex-col justify-center h-24;
+}
+
+.blockhaus-featured-pages a.wp-block-button__link {
+  @apply bg-offset text-primary-default hover:bg-secondary;
 }
 
 .blockhaus-image img {

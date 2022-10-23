@@ -15,7 +15,7 @@ $post_type_obj = get_post_type_object( $post_type );
 ?>
 
 	<!-- <main id="primary" class="pt-20 lg:p-6 bg-primary-default my-12 rounded-md w-11/12 md:w-3/4 mx-auto grid-cols-1 md:grid-cols-3 gap-6"> -->
-		<main class="space-y-6 p-6 w-11/12 md:w-3/4 bg-primary-default rounded-md shadow-md mx-auto mt-16 mb-4 md:mt-12 md:mb-12">
+	<main class="space-y-6 p-6 w-11/12 lg:w-3/4 bg-primary-default rounded-md shadow-md mx-auto mt-32 mb-20 lg:mt-12 lg:mb-12">
 
 			<!-- <header class="col-span-full"> -->
 
@@ -25,7 +25,7 @@ $post_type_obj = get_post_type_object( $post_type );
 		<?php 
 		
 
-		the_archive_title( '<h1 class="page-title z-0 w-fit has-gigantic-font-size font-black leading-tight">', '</h1>' );
+		the_archive_title( '<h1 class="page-title z-0 w-fit has-gigantic-font-size text-primary-default font-black leading-tight">', '</h1>' );
 	
 	?>
 

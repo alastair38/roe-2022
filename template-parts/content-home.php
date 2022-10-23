@@ -14,7 +14,7 @@
 		<?php the_title( '<h1>', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="space-y-12">
+	<div class="space-y-12 bg-neutral-light-100">
 		<?php
 		the_content();
 		?>
