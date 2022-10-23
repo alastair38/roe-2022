@@ -33,7 +33,7 @@
 			
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation flex overflow-y-auto gap-0 lg:gap-6 items-center h-12 md:px-6 lg:overflow-x-auto lg:overflow-y-hidden">
+		<nav id="site-navigation" class="main-navigation flex gap-0 lg:gap-6 items-center h-12 md:px-6 lg:overflow-x-auto">
 		
 			<button class="menu-toggle text-sm flex items-center gap-1 font-sans lg:hidden font-bold uppercase bg-white px-2 shadow-md rounded-full" aria-controls="primary-menu" aria-expanded="false"><span id="mobile-menu-text"><?php esc_html_e( 'Menu', 'blockhaus' ); ?></span><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
@@ -43,7 +43,7 @@
 				array(
 					'theme_location' => 'menu-1',
 					'menu_id'        => 'primary-menu',
-					'menu_class'		 => 'overflow-auto flex flex-col text-2xl lg:text-base lg:h-12 lg:flex-row absolute lg:relative left-0 right-0 top-0 -z-10 lg:z-0 bg-primary-default -translate-y-full lg:translate-y-0 invisible lg:visible gap-4 lg:gap-4 h-screen justify-center items-center ml-auto ease-in-out duration-200'
+					'menu_class'		 => 'overflow-y-auto flex flex-col text-2xl lg:text-base lg:h-12 lg:flex-row absolute lg:relative left-0 right-0 top-0 -z-10 lg:z-0 bg-primary-default -translate-y-full lg:translate-y-0 invisible lg:visible gap-4 lg:gap-4 h-screen justify-center items-center ml-auto ease-in-out duration-200'
 				)
 			);
 			?>

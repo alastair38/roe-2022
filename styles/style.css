@@ -2124,10 +2124,6 @@ input[type='text'], input[type='email'], textarea {
   justify-self: start;
 }
 
-.overflow-auto {
-  overflow: auto;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -3053,10 +3049,6 @@ button.slick-arrow:hover {
 
   .lg\:overflow-x-auto {
     overflow-x: auto;
-  }
-
-  .lg\:overflow-y-hidden {
-    overflow-y: hidden;
   }
 
   .lg\:rounded-none {
