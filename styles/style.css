@@ -2940,10 +2940,6 @@ button.slick-arrow:hover {
     flex-direction: row;
   }
 
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
   .md\:gap-12 {
     gap: 3rem;
   }
@@ -2998,6 +2994,10 @@ button.slick-arrow:hover {
 
   .lg\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .lg\:mr-6 {
+    margin-right: 1.5rem;
   }
 
   .lg\:hidden {
