@@ -664,7 +664,6 @@ h1[contenteditable='true'] {
 
 main {
   max-width: 1600px;
-  margin-inline: auto;
 }
 
 article p a, .page-template-default article a, .page-template-page-full section a {
@@ -2196,13 +2195,17 @@ input[type='text'], input[type='email'], textarea {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-primary-default {
+  background-color: var(--wp--preset--color--primary-default);
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-primary-default {
-  background-color: var(--wp--preset--color--primary-default);
+.bg-secondary {
+  background-color: var(--wp--preset--color--secondary);
 }
 
 .bg-neutral-light-500 {
@@ -2703,18 +2706,13 @@ button.slick-arrow:hover {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:bg-gray-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+.hover\:bg-neutral-dark-500:hover {
+  background-color: var(--wp--preset--color--neutral-dark-500);
 }
 
 .hover\:bg-green-300:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(134 239 172 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-neutral-dark-500:hover {
-  background-color: var(--wp--preset--color--neutral-dark-500);
 }
 
 .hover\:bg-neutral-light-500:hover {
@@ -3066,12 +3064,12 @@ button.slick-arrow:hover {
     padding-bottom: 8rem;
   }
 
-  .lg\:pt-8 {
-    padding-top: 2rem;
-  }
-
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
   }
 
   .lg\:text-left {

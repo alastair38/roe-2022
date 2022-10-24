@@ -10,11 +10,11 @@
 get_header();
 ?>
 
-<main id="primary" class="main-content py-20 lg:pt-8 lg:pb-20">
+<main id="primary" class="main-content mt-28 mb-20 lg:mt-12 lg:mb-12">
 
-		<section class="p-6 w-11/12 md:w-3/4 bg-white rounded-md mx-auto space-y-6">
+		<section class="p-6 w-11/12 lg:w-3/4 bg-primary-default rounded-md mx-auto space-y-6">
 			<header class="page-header">
-				<h1 class="has-gigantic-font-size font-black"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'blockhaus' ); ?></h1>
+				<h1 class="has-gigantic-font-size font-black"><?php esc_html_e( 'Sorry! That page can&rsquo;t be found.', 'blockhaus' ); ?></h1>
 			</header><!-- .page-header -->
 
 			<div class="space-y-6">
