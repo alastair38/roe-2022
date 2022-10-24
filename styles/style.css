@@ -709,12 +709,14 @@ main {
   background-color: var(--wp--preset--color--highlight);
 }
 
-.home-wrapper {
-  padding-right: 1.5rem;
+@media (min-width: 1024px) {
+  .home-wrapper {
+    padding-right: 1.5rem;
+  }
 }
 
 .entry-header.bg-offset h1 {
-  color: white;
+  color: var(--wp--preset--color--primary-default);
 }
 
 section.has-accent-tertiary-background-color a {
@@ -1017,7 +1019,7 @@ blockquote.blockhaus-quote:after {
 }
 
 .entry-header.blockhaus-featured-pages a.wp-block-button__link h1 {
-  color: white;
+  color: var(--wp--preset--color--primary-default);
 }
 
 .blockhaus-featured-pages a.wp-block-button__link:hover {
@@ -1323,7 +1325,7 @@ form#loginform input#wp-submit {
 }
 
 .entry-headerform#loginform input#wp-submit h1 {
-  color: white;
+  color: var(--wp--preset--color--primary-default);
 }
 
 /* WP FORMS OVERRIDES */
@@ -1827,8 +1829,8 @@ input[type='text'], input[type='email'], textarea {
   margin-top: 0.5rem;
 }
 
-.mt-32 {
-  margin-top: 8rem;
+.mt-28 {
+  margin-top: 7rem;
 }
 
 .mb-20 {

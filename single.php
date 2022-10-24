@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main mt-32 mb-20 lg:mt-12 lg:mb-12">
+	<main id="primary" class="site-main mt-28 mb-20 lg:mt-12 lg:mb-12">
 
 		<?php
 		while ( have_posts() ) :

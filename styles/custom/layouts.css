@@ -1,9 +1,9 @@
 .home-wrapper {
-  @apply pr-6;
+  @apply lg:pr-6;
 }
 
 .entry-header.bg-offset h1 {
-  color: white;
+  @apply text-primary-default;
 }
 
 section.has-accent-tertiary-background-color a {
