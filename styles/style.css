@@ -724,36 +724,18 @@ section.has-accent-tertiary-background-color a {
 }
 
 [class*='-template-default'] .post-thumbnail img, .blog .post-thumbnail img {
+  aspect-ratio: 1 / 1;
   height: 5rem;
+  width: 5rem;
   border-radius: 0.375rem;
 }
 
 @media (min-width: 768px) {
   [class*='-template-default'] .post-thumbnail img, .blog .post-thumbnail img {
     height: 10rem;
+    width: 10rem;
   }
 }
-
-[class*='-template-default'] .post-thumbnail img,
-.blog .post-thumbnail img {
-  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
-}
-
-/* [class*='-template-default'] header.entry-header:before,
-.blog header.entry-header:before,
-.archive header.entry-header:before {
-  /* content: ''; */
-
-/* position: absolute;
-  aspect-ratio: 1 / 1;
-  height: 25rem;
-  background: rgba(0, 0, 0, 0.2);
-
-  right: -5rem;
-  transform: rotate(45deg);
-  z-index: -1;
-  outline: 5rem solid rgba(33, 89, 158, 0.3);
-} */
 
 .blog article img, .blockhaus-blog-latest img {
   aspect-ratio: 16 / 9;
