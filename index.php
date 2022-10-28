@@ -17,7 +17,7 @@ get_header();
 
 	<!-- <main id="primary" class="pt-20 lg:p-6 bg-primary-default my-12 rounded-md w-11/12 md:w-3/4 mx-auto grid-cols-1 md:grid-cols-3 gap-6"> -->
 
-	<main class="space-y-6 p-6 w-11/12 md:w-3/4 bg-primary-default rounded-md shadow-md mx-auto mt-28 mb-20 lg:mt-12 lg:mb-12">
+	<main class="space-y-6 p-6 w-11/12 lg:w-3/4 bg-primary-default rounded-md shadow-md mx-auto mt-28 mb-20 lg:mt-12 lg:mb-12">
 
 		<?php
 		if ( have_posts() ) :
