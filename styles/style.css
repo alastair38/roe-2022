@@ -1049,6 +1049,7 @@ blockquote.blockhaus-quote:after {
 figure.about {
   float: none;
   margin-left: 0px;
+  margin-bottom: 1rem;
   width: 100%;
 }
 
@@ -1056,6 +1057,7 @@ figure.about {
   figure.about {
     float: right;
     margin-left: 2rem;
+    margin-bottom: 0px;
     width: auto;
   }
 }
