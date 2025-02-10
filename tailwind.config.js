@@ -1,4 +1,4 @@
-const defaultTheme = require('tailwindcss/defaultTheme')
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
   content: [
@@ -66,6 +66,10 @@ module.exports = {
         header: '12.5% 1fr 12.5%',
         sidebar: '67% 1fr',
       },
+      screens: {
+        lg: '1380px',
+        // => @media (min-width: 992px) { ... }
+      },
       typography: {
         DEFAULT: {
           css: {
@@ -89,4 +93,4 @@ module.exports = {
       strategy: 'base', // only generate global styles
     }),
   ],
-}
+};

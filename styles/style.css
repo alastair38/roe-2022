@@ -708,7 +708,7 @@ main {
   background-color: var(--wp--preset--color--highlight);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1380px) {
   .home-wrapper {
     padding-right: 1.5rem;
   }
@@ -780,7 +780,7 @@ section.has-accent-tertiary-background-color a {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1380px) {
   .single .post-thumbnail {
     display: block;
   }
@@ -815,15 +815,15 @@ body.single-books {
   }
 }
 
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+@media (min-width: 1380px) {
+  .container {
+    max-width: 1380px;
   }
 }
 
@@ -2986,7 +2986,7 @@ button.slick-arrow:hover {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1380px) {
   .lg\:visible {
     visibility: visible;
   }

@@ -17,6 +17,7 @@
     "url": "https://github.com/Automattic/_s/issues"
   },
   "devDependencies": {
+    "@playwright/test": "^1.29.2",
     "@tailwindcss/typography": "^0.5.2",
     "@wordpress/scripts": "^19.2.2",
     "autoprefixer": "^10.4.7",
@@ -43,7 +44,10 @@
   "scripts": {
     "dev": "tailwindcss -i ./styles/tailwind.css -o ./styles/style.css --postcss",
     "watch": "tailwindcss -i ./styles/tailwind.css -o ./styles/style.css --postcss --watch",
-    "production": "tailwindcss -i ./styles/tailwind.css -o ./styles/style.css --postcss --minify"
+    "production": "tailwindcss -i ./styles/tailwind.css -o ./styles/style.css --postcss --minify",
+    "test:chrome": "npx playwright test --headed --browser=chromium",
+    "test:firefox": "npx playwright test --headed --browser=firefox",
+    "test:safari": "npx playwright test --headed --browser=webkit"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.2"
